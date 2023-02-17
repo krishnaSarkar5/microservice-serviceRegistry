@@ -1,0 +1,12 @@
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost  # define host name
+
+  client:
+    register-with-eureka: false  # This project can not register as a client
+    fetch-registry: false  # not going to fetch service registry as this project is itself a service registry
+
+
